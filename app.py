@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request
 app = Flask(__name__)
 
+headers = {'Authorization': 'cab267664390484ca1eb8ad4fa908124'}
+
+
 @app.route('/')
 def home():
     return render_template('home.html')
